@@ -2,6 +2,10 @@
 
 「琥珀と青」を1つ目の制作実績として掲載する、最小構成の個人ポートフォリオサイトです。
 
+## Live Site
+
+https://techueda-bot.github.io/portfolio-site-/
+
 ## 概要
 
 Web制作、AI活用、Instagram投稿、デザイン、文章制作の学習内容を、作品として見せるための1ページ構成のポートフォリオです。
