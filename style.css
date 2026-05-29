@@ -220,6 +220,10 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.work-card + .work-card {
+  margin-top: clamp(50px, 7vw, 86px);
+}
+
 .work-thumb {
   overflow: hidden;
   background: var(--paper-blue);
