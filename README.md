@@ -78,13 +78,11 @@ portfolio-minimal/
 
 ## ローカルでの確認方法
 
-このフォルダで以下を実行します。
+以下のコマンドで簡易サーバーを起動し、ブラウザで確認できます。
 
 ```bash
 python3 -m http.server 8000
 ```
-
-ブラウザで以下を開きます。
 
 ```text
 http://localhost:8000
