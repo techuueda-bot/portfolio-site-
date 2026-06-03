@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Web制作とAI活用を学ぶ個人ポートフォリオ。作品として「琥珀と青」と「RO FIKA」を掲載。"
+      content="Web制作とAI活用を学ぶ個人ポートフォリオ。作品として「琥珀と青」「RO FIKA」「ポラーノワークス」を掲載。"
     />
     <title>Portfolio Minimal | Works</title>
     <link rel="stylesheet" href="./style.css" />
@@ -18,6 +18,7 @@
         <a href="#home">Home</a>
         <a href="#works">Works</a>
         <a href="#rofika">RO FIKA</a>
+        <a href="#polano">Polano Works</a>
       </nav>
     </header>
 
@@ -42,7 +43,7 @@
           <p class="section-label">Works</p>
           <h2 id="works-title">制作実績</h2>
           <p>
-            架空ブランドを題材に、余白や言葉、スクリーンショットの見せ方を整理した作品を掲載しています。
+            架空ブランドやサービスサイトを題材に、余白や言葉、スクリーンショットの見せ方を整理した作品を掲載しています。
           </p>
         </div>
 
@@ -96,6 +97,34 @@
             </ul>
             <div class="project-links" aria-label="RO FIKAのリンク">
               <a href="#rofika">View Detail</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a class="work-thumb" href="#polano" aria-label="ポラーノワークスの詳細へ移動">
+            <img
+              src="./assets/projects/polano/polano-01-first-view-pc.png"
+              alt="ポラーノワークス見学案内サイトのファーストビュー"
+              width="1440"
+              height="900"
+            />
+          </a>
+          <div class="work-card-body">
+            <p class="work-category">Welfare / Tour Guide Site / UX Writing</p>
+            <h3>ポラーノワークス</h3>
+            <p>
+              架空の就労継続支援B型事業所を題材に、見学前の不安を軽くすることを目的に設計した見学案内サイトです。
+            </p>
+            <ul class="tag-list" aria-label="ポラーノワークスのタグ">
+              <li>Service Site</li>
+              <li>Form Design</li>
+              <li>Responsive</li>
+              <li>HTML / CSS / JavaScript</li>
+            </ul>
+            <div class="project-links" aria-label="ポラーノワークスのリンク">
+              <a href="#polano">View Detail</a>
+              <a href="https://techuueda-bot.github.io/polano-works-tour-guide/" target="_blank" rel="noopener noreferrer">Live Site</a>
             </div>
           </div>
         </article>
@@ -284,6 +313,82 @@
                   height="844"
                 />
                 <figcaption>Mobile Info</figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="polano" class="project-section" aria-labelledby="polano-title">
+        <div class="project-hero">
+          <div>
+            <p class="section-label">Project Detail</p>
+            <h2 id="polano-title">ポラーノワークス</h2>
+            <p>
+              架空の就労継続支援B型事業所の見学案内サイトです。「見学だけでも、大丈夫です。」を中心に、利用を急がせず、本人が自分のペースで見学について相談できる導線を設計しました。
+            </p>
+            <div class="project-links" aria-label="ポラーノワークスの外部リンク">
+              <a href="https://techuueda-bot.github.io/polano-works-tour-guide/" target="_blank" rel="noopener noreferrer">Live Site</a>
+              <a href="https://github.com/techuueda-bot/polano-works-tour-guide" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+          <figure>
+            <img
+              src="./assets/projects/polano/polano-01-first-view-pc.png"
+              alt="ポラーノワークス見学案内サイトのファーストビュー"
+              width="1440"
+              height="900"
+            />
+            <figcaption>Hero / Polano Works</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-content">
+          <section class="project-block project-block--media" aria-labelledby="polano-strategy-title">
+            <div>
+              <p class="section-label">Strategy</p>
+              <h3 id="polano-strategy-title">決定へ押し込まず、不安をほどく導線。</h3>
+              <p>
+                目的を「利用開始」ではなく「見学前の不安軽減」に置きました。FAQ、見学の流れ、写真で見る道順、相談フォームへと段階的に進めることで、本人には急がせず、支援者には必要な情報を探しやすくしています。
+              </p>
+            </div>
+            <figure>
+              <img
+                src="./assets/projects/polano/polano-02-contact-form-pc.png"
+                alt="ポラーノワークス見学相談フォームのPC表示"
+                width="1440"
+                height="900"
+              />
+              <figcaption>Consultation Form / Required Fields</figcaption>
+            </figure>
+          </section>
+
+          <section class="project-block project-block--media" aria-labelledby="polano-form-title">
+            <div>
+              <p class="section-label">Form Design</p>
+              <h3 id="polano-form-title">見学確定ではなく、相談の入口として設計する。</h3>
+              <p>
+                必須項目は「お名前」と「連絡先」の2つに限定しました。自由記入欄は任意であることを明示し、電話が苦手な人にも配慮して、メール希望者には電話しない約束が見えるようにしています。
+              </p>
+            </div>
+            <div class="mobile-shots">
+              <figure>
+                <img
+                  src="./assets/projects/polano/polano-03-first-view-mobile.png"
+                  alt="ポラーノワークス見学案内サイトのスマホファーストビュー"
+                  width="390"
+                  height="844"
+                />
+                <figcaption>Mobile Hero</figcaption>
+              </figure>
+              <figure>
+                <img
+                  src="./assets/projects/polano/polano-04-contact-fields-mobile.png"
+                  alt="ポラーノワークス見学相談フォームのスマホ入力欄"
+                  width="390"
+                  height="844"
+                />
+                <figcaption>Mobile Form</figcaption>
               </figure>
             </div>
           </section>
