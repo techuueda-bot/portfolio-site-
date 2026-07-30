@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ページが見つかりません｜Tetsuhisa Ueda</title>
+  <meta name="description" content="お探しのページは見つかりませんでした。">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://techuueda-bot.github.io/portfolio-site-/404.html">
+  <link rel="icon" href="https://techuueda-bot.github.io/portfolio-site-/favicon.ico">
+  <link rel="apple-touch-icon" href="https://techuueda-bot.github.io/portfolio-site-/assets/img/common/apple-touch-icon.png">
+  <style>
+    /* 404は外部CSSを読まない(表示されるURLの深さが読めないため)。
+       値はstyle.cssのトークンと揃えてあるので、器の色を変えたらここも直す。 */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100svh;
+      display: grid; place-content: center; justify-items: start;
+      padding: 32px clamp(24px, 6vw, 80px);
+      background: #0a0b0d; color: #e8e6e1;
+      font-family: "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      line-height: 1.9; letter-spacing: .02em;
+      overflow-wrap: anywhere;
+    }
+    .en {
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 11px; letter-spacing: .3em; color: #8b8a86; margin: 0 0 12px;
+    }
+    h1 { font-size: clamp(26px, 5vw, 44px); line-height: 1.4; margin: 0 0 20px; }
+    p { margin: 0; max-width: 34em; }
+    .muted { color: #8b8a86; font-size: 15px; }
+    ul { list-style: none; padding: 0; margin: 40px 0 0; display: flex; flex-wrap: wrap; gap: 24px; }
+    a {
+      color: inherit; text-decoration: none;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12px; letter-spacing: .12em;
+      border-bottom: 1px solid #8b8a86; padding-bottom: 4px;
+    }
+    a:hover { opacity: .7; }
+    a:focus-visible { outline: 2px solid #e8e6e1; outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <p class="en">404 Not Found</p>
+  <h1>ページが見つかりません</h1>
+  <p class="muted">アドレスが変わったか、削除された可能性があります。お探しのものが作品ページであれば、一覧から辿れます。</p>
+  <ul>
+    <li><a href="https://techuueda-bot.github.io/portfolio-site-/">トップへ</a></li>
+    <li><a href="https://techuueda-bot.github.io/portfolio-site-/works/">作品一覧へ</a></li>
+    <li><a href="https://techuueda-bot.github.io/portfolio-site-/contact/">お問い合わせ</a></li>
+  </ul>
+</body>
+</html>

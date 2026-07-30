@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact｜Tetsuhisa Ueda</title>
+  <meta name="description" content="お仕事のご相談、制作物へのご感想はこちらからお送りください。お名前・メールアドレス・内容の3項目だけでお送りいただけます。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact｜Tetsuhisa Ueda">
+  <meta property="og:description" content="お仕事のご相談、制作物へのご感想はこちらからお送りください。お名前・メールアドレス・内容の3項目だけでお送りいただけます。">
+  <meta property="og:url" content="https://techuueda-bot.github.io/portfolio-site-/contact/">
+  <meta property="og:image" content="https://techuueda-bot.github.io/portfolio-site-/assets/img/common/ogp.jpg">
+  <meta property="og:site_name" content="Tetsuhisa Ueda Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://techuueda-bot.github.io/portfolio-site-/contact/">
+  <link rel="icon" href="../favicon.ico">
+  <link rel="apple-touch-icon" href="../assets/img/common/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+JP:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="p-contact">
+
+  <div class="stage" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="site-header__logo" href="../">Tetsuhisa Ueda</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="メニューを開く" aria-controls="global-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="../">Top</a></li>
+        <li><a href="../works/">Works</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../contact/" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <p class="page-header__en js-reveal">Contact</p>
+        <h1 class="page-header__title js-reveal" data-delay="1">お問い合わせ</h1>
+        <p class="page-header__lead js-reveal" data-delay="2">お仕事のご相談も、制作物への感想だけでも構いません。数日以内にお返事します。</p>
+      </div>
+    </div>
+
+    <div class="breadcrumb">
+      <div class="container">
+        <ol>
+          <li><a href="../">トップ</a></li><li aria-current="page">Contact</li>
+        </ol>
+      </div>
+    </div>
+
+    <section class="section section--tight">
+      <div class="container--narrow">
+        <!-- 送信手段: Formspree。公開前に action の {FORM_ID} を自分のフォームIDに差し替える。
+             差し替えるまではメールソフトが開く mailto にフォールバックする(README参照)。 -->
+        <form class="form js-contact-form"
+              action="https://formspree.io/f/{FORM_ID}"
+              method="POST" novalidate>
+
+          <div class="form__field">
+            <label for="name">お名前<span class="required">必須</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+            <p class="form__error" id="name-error" data-error-for="name" aria-live="polite"></p>
+          </div>
+
+          <div class="form__field">
+            <label for="email">メールアドレス<span class="required">必須</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+            <p class="form__error" id="email-error" data-error-for="email" aria-live="polite"></p>
+          </div>
+
+          <div class="form__field">
+            <label for="message">お問い合わせ内容<span class="required">必須</span></label>
+            <textarea id="message" name="message" rows="8" required aria-describedby="message-error"></textarea>
+            <p class="form__error" id="message-error" data-error-for="message" aria-live="polite"></p>
+          </div>
+
+          <!-- ハニーポット: 削除禁止(スパム対策) -->
+          <div class="form__hp" aria-hidden="true">
+            <label>この欄は入力しないでください<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <input type="hidden" name="_subject" value="ポートフォリオサイトからのお問い合わせ">
+          <input type="hidden" name="_next" value="https://techuueda-bot.github.io/portfolio-site-/contact/thanks/">
+
+          <p class="form__privacy">ご入力いただいた内容は、お返事のためだけに使用します。詳しくは<a href="../privacy/">プライバシーポリシー</a>をご覧ください。</p>
+
+          <div>
+            <button class="button" type="submit">送信する</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p><small>&copy; 2026 Tetsuhisa Ueda</small></p>
+      <ul class="site-footer__nav">
+        <li><a href="../works/">Works</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../contact/">Contact</a></li>
+        <li><a href="../privacy/">Privacy</a></li>
+        <li><a href="https://github.com/techuueda-bot" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="motion-stop">アニメーションを停止する</button>
+  <script src="../assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://techuueda-bot.github.io/portfolio-site-/sitemap.xml
