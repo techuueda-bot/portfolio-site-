@@ -345,7 +345,7 @@ def build_about():
              f"{BASE}/about/", "p-about")
         + header(rel, "about")
         + "\n  <main>"
-        + page_header("About", "つくっている人",
+        + page_header("About", "プロフィール",
                       "架空の店や施設を題材に、企画・原稿・デザイン・実装までひとりで通してつくっています。")
         + crumbs(rel, [("About", None)])
         + f"""
