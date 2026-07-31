@@ -1,403 +1,357 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Web制作とAI活用を学ぶ個人ポートフォリオ。作品として「琥珀と青」「RO FIKA」「ポラーノワークス」を掲載。"
-    />
-    <title>Portfolio Minimal | Works</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="site-name" href="#home" aria-label="Homeへ移動">Portfolio</a>
-      <nav class="site-nav" aria-label="ページ内ナビゲーション">
-        <a href="#home">Home</a>
-        <a href="#works">Works</a>
-        <a href="#rofika">RO FIKA</a>
-        <a href="#polano">Polano Works</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetsuhisa Ueda｜Web制作ポートフォリオ</title>
+  <meta name="description" content="架空の店や施設を題材につくった5つのWebサイトを掲載しています。中華そば店、手打ちうどん店、就労継続支援事業所、カフェ、保育園。どれも、はじめて訪れる人の一歩を軽くするために設計しました。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tetsuhisa Ueda｜Web制作ポートフォリオ">
+  <meta property="og:description" content="架空の店や施設を題材につくった5つのWebサイト。同じ顔のサイトは、ひとつもありません。">
+  <meta property="og:url" content="https://techuueda-bot.github.io/portfolio-site-/">
+  <meta property="og:image" content="https://techuueda-bot.github.io/portfolio-site-/assets/img/common/ogp.jpg">
+  <meta property="og:site_name" content="Tetsuhisa Ueda Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://techuueda-bot.github.io/portfolio-site-/">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/img/common/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+JP:wght@500&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Old+Mincho:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://techuueda-bot.github.io/portfolio-site-/",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Tetsuhisa Ueda",
+      "jobTitle": "Web制作",
+      "url": "https://techuueda-bot.github.io/portfolio-site-/",
+      "sameAs": ["https://github.com/techuueda-bot"]
+    }
+  }
+  </script>
+</head>
+<body class="p-home">
 
-    <main>
-      <section id="home" class="home-section" aria-labelledby="home-title">
-        <p class="section-label">Home</p>
-        <h1 id="home-title">静かに伝わるWeb表現をつくる。</h1>
-        <p class="home-lead">
-          Web制作、AI活用、文章表現を学びながら、余白と言葉を大切にしたサイト制作に取り組んでいます。
+  <div class="loader" id="loader" aria-hidden="true">
+    <span>TETSUHISA UEDA</span>
+    <span class="loader__bar"></span>
+  </div>
+
+  <div class="stage" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="site-header__logo" href="./">Tetsuhisa Ueda</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="メニューを開く" aria-controls="global-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="global-nav" id="global-nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="./" aria-current="page">Top</a></li>
+        <li><a href="works/">Works</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 幕1: 暗室ヒーロー。5作品が奥行きを持って浮かぶ -->
+    <section class="hero" id="hero">
+      <div class="hero__space" aria-hidden="true">
+        <div class="hero__field" id="hero-field">
+          <figure class="hero__plane" data-slug="kohaku-to-ao"    style="--x:-215;--y:-255;--z:-430;--rot:15deg"><img src="assets/img/works/kohaku-to-ao/cover.webp" alt="" width="1440" height="900" decoding="async"></figure>
+          <figure class="hero__plane" data-slug="yodaka-no-hoshi" style="--x:305;--y:-250;--z:-700;--rot:-12deg"><img src="assets/img/works/yodaka-no-hoshi/cover.webp" alt="" width="1440" height="900" decoding="async"></figure>
+          <figure class="hero__plane" data-slug="polano-works"    style="--x:265;--y:130;--z:-320;--rot:9deg"><img src="assets/img/works/polano-works/cover.webp" alt="" width="1440" height="900" decoding="async"></figure>
+          <figure class="hero__plane" data-slug="ro-fika"         style="--x:640;--y:-55;--z:-880;--rot:-18deg"><img src="assets/img/works/ro-fika/cover.webp" alt="" width="1440" height="900" loading="lazy" decoding="async"></figure>
+          <figure class="hero__plane" data-slug="asanoha-nursery" style="--x:-30;--y:265;--z:-1040;--rot:20deg"><img src="assets/img/works/asanoha-nursery/cover.webp" alt="" width="1440" height="900" loading="lazy" decoding="async"></figure>
+        </div>
+      </div>
+      <div class="container hero__inner">
+        <p class="hero__label">Web Portfolio</p>
+        <h1 class="hero__title js-reveal">同じ顔は、<br>つくらない。</h1>
+        <p class="hero__lead js-reveal" data-delay="1">架空の店や施設を題材に、5つのサイトをつくりました。どれも、はじめて訪れる人の一歩を少し軽くするために設計しています。</p>
+        <p class="hero__scroll" aria-hidden="true">SCROLL</p>
+      </div>
+    </section>
+
+    <!-- 幕2: Index。ホバーで暗室の該当作品が手前に来る -->
+    <section class="section section--tight" aria-labelledby="index-title">
+      <div class="container">
+        <div class="section-head js-reveal">
+          <span class="section-head__en">Index</span>
+          <h2 class="section-head__title" id="index-title">5つのサイト</h2>
+        </div>
+        <ul class="index-list js-reveal" data-delay="1" id="work-index">
+          <li class="index-row" data-slug="kohaku-to-ao">
+            <a href="#kohaku-to-ao">
+              <span class="index-row__no">01</span>
+              <span class="index-row__name">琥珀と青</span>
+              <span class="index-row__kind">架空の中華そば店 / 鹿児島</span>
+            </a>
+          </li>
+          <li class="index-row" data-slug="yodaka-no-hoshi">
+            <a href="#yodaka-no-hoshi">
+              <span class="index-row__no">02</span>
+              <span class="index-row__name">よだかの星 手打ちうどん</span>
+              <span class="index-row__kind">架空の手打ちうどん店 / 花巻</span>
+            </a>
+          </li>
+          <li class="index-row" data-slug="polano-works">
+            <a href="#polano-works">
+              <span class="index-row__no">03</span>
+              <span class="index-row__name">ポラーノワークス</span>
+              <span class="index-row__kind">架空の就労継続支援B型事業所 / 見学案内</span>
+            </a>
+          </li>
+          <li class="index-row" data-slug="ro-fika">
+            <a href="#ro-fika">
+              <span class="index-row__no">04</span>
+              <span class="index-row__name">RO FIKA</span>
+              <span class="index-row__kind">架空の夏のカフェ</span>
+            </a>
+          </li>
+          <li class="index-row" data-slug="asanoha-nursery">
+            <a href="#asanoha-nursery">
+              <span class="index-row__no">05</span>
+              <span class="index-row__name">あさのは保育園</span>
+              <span class="index-row__kind">架空の企業主導型保育園 / 鹿児島</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 幕3 ★見せ場: 実物が枠の中を流れ、画面がその作品の色に染まる -->
+    <section class="exhibit js-exhibit" id="kohaku-to-ao" data-slug="kohaku-to-ao" aria-labelledby="ex01">
+      <div class="exhibit__sticky">
+        <div class="container">
+          <div class="exhibit__grid">
+            <div>
+              <p class="exhibit__no">Work 01</p>
+              <h2 class="exhibit__name" id="ex01">琥珀と青</h2>
+              <p class="exhibit__copy">雨上がりに、心を整える一杯。</p>
+              <p class="exhibit__note">深い青の器に、澄んだ琥珀のスープ。売り込むのではなく、食べ終わったあとに残る静けさのほうから設計しました。</p>
+              <ul class="exhibit__tags">
+                <li>ブランドサイト</li><li>予約導線</li><li>写真主体</li>
+              </ul>
+              <div class="exhibit__links">
+                <a href="works/kohaku-to-ao/">制作の話を読む</a>
+                <a href="https://techuueda-bot.github.io/kohaku-to-ao/" target="_blank" rel="noopener noreferrer">公開サイト</a>
+              </div>
+            </div>
+            <figure class="viewport js-viewport">
+              <div class="viewport__chrome" aria-hidden="true">
+                <span class="viewport__dot"></span><span class="viewport__dot"></span><span class="viewport__dot"></span>
+                <span class="viewport__url">techuueda-bot.github.io/kohaku-to-ao/</span>
+              </div>
+              <div class="viewport__screen">
+                <div class="viewport__strip" data-strip></div>
+              </div>
+              <figcaption class="sr-only">琥珀と青のページ全体。スクロールに合わせて上から下まで流れます。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibit js-exhibit" id="yodaka-no-hoshi" data-slug="yodaka-no-hoshi" aria-labelledby="ex02">
+      <div class="exhibit__sticky">
+        <div class="container">
+          <div class="exhibit__grid">
+            <div>
+              <p class="exhibit__no">Work 02</p>
+              <h2 class="exhibit__name" id="ex02">よだかの星<br>手打ちうどん</h2>
+              <p class="exhibit__copy">湯気の向こうに、一番星が見える一杯を。</p>
+              <p class="exhibit__note">醜いと嗤われても燃え続けた夜鷹の話を下敷きに。写真を1枚も使わず、縦書きと余白と星図だけで店を立てました。下層4ページ構成です。</p>
+              <ul class="exhibit__tags">
+                <li>下層4ページ</li><li>縦書き</li><li>写真不使用</li>
+              </ul>
+              <div class="exhibit__links">
+                <a href="works/yodaka-no-hoshi/">制作の話を読む</a>
+                <a href="https://techuueda-bot.github.io/yodaka-no-hoshi-udon/" target="_blank" rel="noopener noreferrer">公開サイト</a>
+              </div>
+            </div>
+            <figure class="viewport js-viewport">
+              <div class="viewport__chrome" aria-hidden="true">
+                <span class="viewport__dot"></span><span class="viewport__dot"></span><span class="viewport__dot"></span>
+                <span class="viewport__url">techuueda-bot.github.io/yodaka-no-hoshi-udon/</span>
+              </div>
+              <div class="viewport__screen">
+                <div class="viewport__strip" data-strip></div>
+              </div>
+              <figcaption class="sr-only">よだかの星 手打ちうどんのページ全体。スクロールに合わせて上から下まで流れます。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibit js-exhibit" id="polano-works" data-slug="polano-works" aria-labelledby="ex03">
+      <div class="exhibit__sticky">
+        <div class="container">
+          <div class="exhibit__grid">
+            <div>
+              <p class="exhibit__no">Work 03</p>
+              <h2 class="exhibit__name" id="ex03">ポラーノワークス</h2>
+              <p class="exhibit__copy">見学だけでも、大丈夫です。</p>
+              <p class="exhibit__note">目的を「利用開始」ではなく「見学前の不安をほどくこと」に置き直しました。フォームの必須項目は、名前と連絡先の2つだけです。</p>
+              <ul class="exhibit__tags">
+                <li>フォーム設計</li><li>UXライティング</li><li>道順アニメーション</li>
+              </ul>
+              <div class="exhibit__links">
+                <a href="works/polano-works/">制作の話を読む</a>
+                <a href="https://techuueda-bot.github.io/polano-works-tour-guide/" target="_blank" rel="noopener noreferrer">公開サイト</a>
+              </div>
+            </div>
+            <figure class="viewport js-viewport">
+              <div class="viewport__chrome" aria-hidden="true">
+                <span class="viewport__dot"></span><span class="viewport__dot"></span><span class="viewport__dot"></span>
+                <span class="viewport__url">techuueda-bot.github.io/polano-works-tour-guide/</span>
+              </div>
+              <div class="viewport__screen">
+                <div class="viewport__strip" data-strip></div>
+              </div>
+              <figcaption class="sr-only">ポラーノワークスのページ全体。スクロールに合わせて上から下まで流れます。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibit js-exhibit" id="ro-fika" data-slug="ro-fika" aria-labelledby="ex04">
+      <div class="exhibit__sticky">
+        <div class="container">
+          <div class="exhibit__grid">
+            <div>
+              <p class="exhibit__no">Work 04</p>
+              <h2 class="exhibit__name" id="ex04">RO FIKA</h2>
+              <p class="exhibit__copy">ひとりの午後に、光る小さな休憩。</p>
+              <p class="exhibit__note">世界観だけで終わらせないよう、あとから価格帯と営業情報を足しました。「おしゃれ」より先に「入れそう」と思えることを優先しています。</p>
+              <ul class="exhibit__tags">
+                <li>ブランドサイト</li><li>光の演出</li><li>情報設計の追補</li>
+              </ul>
+              <div class="exhibit__links">
+                <a href="works/ro-fika/">制作の話を読む</a>
+                <a href="https://techuueda-bot.github.io/rofika-portfolio-site/" target="_blank" rel="noopener noreferrer">公開サイト</a>
+              </div>
+            </div>
+            <figure class="viewport js-viewport">
+              <div class="viewport__chrome" aria-hidden="true">
+                <span class="viewport__dot"></span><span class="viewport__dot"></span><span class="viewport__dot"></span>
+                <span class="viewport__url">techuueda-bot.github.io/rofika-portfolio-site/</span>
+              </div>
+              <div class="viewport__screen">
+                <div class="viewport__strip" data-strip></div>
+              </div>
+              <figcaption class="sr-only">RO FIKAのページ全体。スクロールに合わせて上から下まで流れます。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="exhibit js-exhibit" id="asanoha-nursery" data-slug="asanoha-nursery" aria-labelledby="ex05">
+      <div class="exhibit__sticky">
+        <div class="container">
+          <div class="exhibit__grid">
+            <div>
+              <p class="exhibit__no">Work 05</p>
+              <h2 class="exhibit__name" id="ex05">あさのは保育園</h2>
+              <p class="exhibit__copy">はじめて預ける朝を、少し軽くする。</p>
+              <p class="exhibit__note">0〜2歳を預ける親の不安から逆算しました。5作品でいちばん、見た目より導線に時間をかけたサイトです。</p>
+              <ul class="exhibit__tags">
+                <li>成果設計</li><li>CTA設計</li><li>写真主体</li>
+              </ul>
+              <div class="exhibit__links">
+                <a href="works/asanoha-nursery/">制作の話を読む</a>
+                <a href="https://techuueda-bot.github.io/asanoha-nursery-hp/" target="_blank" rel="noopener noreferrer">公開サイト</a>
+              </div>
+            </div>
+            <figure class="viewport js-viewport">
+              <div class="viewport__chrome" aria-hidden="true">
+                <span class="viewport__dot"></span><span class="viewport__dot"></span><span class="viewport__dot"></span>
+                <span class="viewport__url">techuueda-bot.github.io/asanoha-nursery-hp/</span>
+              </div>
+              <div class="viewport__screen">
+                <div class="viewport__strip" data-strip></div>
+              </div>
+              <figcaption class="sr-only">あさのは保育園のページ全体。スクロールに合わせて上から下まで流れます。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 幕4: Approach -->
+    <section class="section" aria-labelledby="approach-title">
+      <div class="container">
+        <div class="section-head js-reveal">
+          <span class="section-head__en">Approach</span>
+          <h2 class="section-head__title" id="approach-title">つくるときに決めていること</h2>
+        </div>
+        <div class="approach">
+          <div class="approach__item js-reveal">
+            <p class="approach__no">01</p>
+            <h3 class="approach__title">目的から決める</h3>
+            <p class="approach__body">きれいに見せることより先に、誰の何を軽くするサイトかを決めます。ポラーノワークスでは、目的を「利用開始」から「見学前の不安軽減」へ置き直したところから設計が動きました。</p>
+          </div>
+          <div class="approach__item js-reveal" data-delay="1">
+            <p class="approach__no">02</p>
+            <h3 class="approach__title">言葉を先に置く</h3>
+            <p class="approach__body">見出しの一文が決まらないうちは、色にも余白にも手をつけません。「見学だけでも、大丈夫です。」が出てから、はじめてデザインを始めました。</p>
+          </div>
+          <div class="approach__item js-reveal" data-delay="2">
+            <p class="approach__no">03</p>
+            <h3 class="approach__title">毎回、引き直す</h3>
+            <p class="approach__body">前につくったサイトの配色も構成も持ち越しません。5つが似ていないのは、そこだけは崩さなかったからです。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 幕5: About抜粋 → Contact -->
+    <section class="section section--tight" aria-labelledby="about-brief-title">
+      <div class="container">
+        <div class="section-head js-reveal">
+          <span class="section-head__en">About</span>
+          <h2 class="section-head__title" id="about-brief-title">つくっている人</h2>
+        </div>
+        <p class="lead js-reveal" data-delay="1">架空の店や施設を題材に、企画・原稿・デザイン・実装までひとりで通してつくっています。5つに共通しているのは、読む人がまだ何も決めていない段階に立っていること。だから、急がせない言葉と余白の取り方をいちばん考えます。掲載しているものはすべて自主制作で、題材はすべて架空です。</p>
+        <p class="js-reveal" data-delay="2" style="margin-top:24px">
+          <a href="about/" style="font-family:var(--font-mono);font-size:12px;letter-spacing:0.12em;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:4px">くわしいプロフィール</a>
         </p>
-        <div class="genre-list" aria-label="制作ジャンル">
-          <span>Web Design</span>
-          <span>Brand Site</span>
-          <span>Responsive</span>
-          <span>AI Support</span>
-        </div>
-        <a class="primary-link" href="#works">View Works</a>
-      </section>
+      </div>
+    </section>
 
-      <section id="works" class="works-section" aria-labelledby="works-title">
-        <div class="section-heading">
-          <p class="section-label">Works</p>
-          <h2 id="works-title">制作実績</h2>
-          <p>
-            架空ブランドやサービスサイトを題材に、余白や言葉、スクリーンショットの見せ方を整理した作品を掲載しています。
-          </p>
-        </div>
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__title js-reveal" id="cta-title">つくりたいものの話を、<br>聞かせてください。</h2>
+        <p class="js-reveal lead" data-delay="1" style="margin:24px auto 40px">お仕事のご相談も、感想だけでも構いません。</p>
+        <a class="button js-reveal" data-delay="2" href="contact/">お問い合わせ</a>
+      </div>
+    </section>
+  </main>
 
-        <article class="work-card">
-          <a class="work-thumb" href="https://techuueda-bot.github.io/kohaku-to-ao/" target="_blank" rel="noopener noreferrer" aria-label="琥珀と青の公開サイトを開く">
-            <img
-              src="./assets/screenshots/kohaku-hero.png"
-              alt="公開中の琥珀と青のHero画面"
-              width="1440"
-              height="900"
-            />
-          </a>
-          <div class="work-card-body">
-            <p class="work-category">Web Design / Brand Site / Fictional Restaurant</p>
-            <h3>琥珀と青</h3>
-            <p>
-              架空の中華そば店を想定したブランドサイト。青い器と琥珀色の一杯を軸に、余白、縦書き、横スクロールを使って、静かな余韻のあるWeb表現を目指しました。
-            </p>
-            <ul class="tag-list" aria-label="琥珀と青のタグ">
-              <li>Web Design</li>
-              <li>Brand Site</li>
-              <li>Fictional Restaurant</li>
-              <li>HTML / CSS / JavaScript</li>
-            </ul>
-            <div class="project-links" aria-label="琥珀と青のリンク">
-              <a href="https://techuueda-bot.github.io/kohaku-to-ao/" target="_blank" rel="noopener noreferrer">サイトを見る / View Site</a>
-            </div>
-          </div>
-        </article>
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p><small>&copy; 2026 Tetsuhisa Ueda</small></p>
+      <ul class="site-footer__nav">
+        <li><a href="works/">Works</a></li>
+        <li><a href="about/">About</a></li>
+        <li><a href="contact/">Contact</a></li>
+        <li><a href="privacy/">Privacy</a></li>
+        <li><a href="https://github.com/techuueda-bot" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
+  </footer>
 
-        <article class="work-card">
-          <a class="work-thumb" href="#rofika" aria-label="RO FIKAの詳細へ移動">
-            <img
-              src="./assets/projects/rofika/rofika-01-hero.png"
-              alt="RO FIKAのHero画面"
-              width="1410"
-              height="920"
-            />
-          </a>
-          <div class="work-card-body">
-            <p class="work-category">架空カフェサイト / Web Design / HTML CSS JavaScript</p>
-            <h3>RO FIKA</h3>
-            <p>
-              冷たい飲みものと焼き菓子をそばに、窓辺で静かにひと息つける時間をテーマにした、架空の小さな夏のカフェサイト。
-            </p>
-            <ul class="tag-list" aria-label="RO FIKAのタグ">
-              <li>Brand Site</li>
-              <li>Cafe</li>
-              <li>Responsive</li>
-              <li>CSS Motion</li>
-            </ul>
-            <div class="project-links" aria-label="RO FIKAのリンク">
-              <a href="#rofika">View Detail</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <a class="work-thumb" href="#polano" aria-label="ポラーノワークスの詳細へ移動">
-            <img
-              src="./assets/projects/polano/polano-01-first-view-pc.png"
-              alt="ポラーノワークス見学案内サイトのファーストビュー"
-              width="1440"
-              height="900"
-            />
-          </a>
-          <div class="work-card-body">
-            <p class="work-category">Welfare / Tour Guide Site / UX Writing</p>
-            <h3>ポラーノワークス</h3>
-            <p>
-              架空の就労継続支援B型事業所を題材に、見学前の不安を軽くすることを目的に設計した見学案内サイトです。
-            </p>
-            <ul class="tag-list" aria-label="ポラーノワークスのタグ">
-              <li>Service Site</li>
-              <li>Form Design</li>
-              <li>Responsive</li>
-              <li>HTML / CSS / JavaScript</li>
-            </ul>
-            <div class="project-links" aria-label="ポラーノワークスのリンク">
-              <a href="#polano">View Detail</a>
-              <a href="https://techuueda-bot.github.io/polano-works-tour-guide/" target="_blank" rel="noopener noreferrer">Live Site</a>
-            </div>
-          </div>
-        </article>
-      </section>
-
-      <section id="kohaku" class="project-section" aria-labelledby="kohaku-title">
-        <div class="project-hero">
-          <div>
-            <p class="section-label">Project Detail</p>
-            <h2 id="kohaku-title">琥珀と青</h2>
-            <p>
-              青い器と琥珀色の一杯から考えた、架空の中華そば店サイト。
-            </p>
-            <div class="project-links" aria-label="琥珀と青の外部リンク">
-              <a href="https://techuueda-bot.github.io/kohaku-to-ao/" target="_blank" rel="noopener noreferrer">Live Site</a>
-            </div>
-          </div>
-          <figure>
-            <img
-              src="./assets/screenshots/kohaku-hero.png"
-              alt="琥珀と青のHero画面"
-              width="1440"
-              height="900"
-            />
-            <figcaption>Hero / Kohaku to Ao</figcaption>
-          </figure>
-        </div>
-
-        <div class="project-content">
-          <section class="project-block project-block--media" aria-labelledby="kohaku-concept-title">
-            <div>
-              <p class="section-label">Concept</p>
-              <h3 id="kohaku-concept-title">静かな余韻を、器と色で伝える。</h3>
-              <p>
-                架空の中華そば店を想定し、青い器と琥珀色のスープをビジュアルの軸にしました。料理を強く売り込むのではなく、食後に残る印象や店の空気が伝わるよう、余白と短い言葉で構成しています。
-              </p>
-            </div>
-            <figure>
-              <img
-                src="./assets/screenshots/kohaku-horizontal.png"
-                alt="琥珀と青の横スクロール縦書きセクション"
-                width="1440"
-                height="900"
-              />
-              <figcaption>Vertical Words / Horizontal Flow</figcaption>
-            </figure>
-          </section>
-
-          <section class="project-block project-block--media" aria-labelledby="kohaku-menu-title">
-            <div>
-              <p class="section-label">Menu</p>
-              <h3 id="kohaku-menu-title">店舗らしさへ、静かに着地する。</h3>
-              <p>
-                縦書きや横スクロールで作った余韻を保ちながら、Menuでは架空店舗としての具体性を足しました。RO FIKAより短めに、カードより少し深く見せる詳細としてまとめています。
-              </p>
-            </div>
-            <figure>
-              <img
-                src="./assets/screenshots/kohaku-menu.png"
-                alt="琥珀と青のMenuセクション"
-                width="1440"
-                height="900"
-              />
-              <figcaption>Menu / Kohaku to Ao</figcaption>
-            </figure>
-          </section>
-        </div>
-      </section>
-
-      <section id="rofika" class="project-section" aria-labelledby="rofika-title">
-        <div class="project-hero">
-          <div>
-            <p class="section-label">Project Detail</p>
-            <h2 id="rofika-title">RO FIKA</h2>
-            <p>
-              架空の小さな夏のカフェとして設計した1ページサイトです。冷たい飲みものと焼き菓子をそばに、窓辺で静かにひと息つける時間をWeb上で表現しました。
-            </p>
-            <div class="project-links" aria-label="RO FIKAの外部リンク">
-              <a href="https://techuueda-bot.github.io/rofika-portfolio-site/" target="_blank" rel="noopener noreferrer">Live Site</a>
-              <a href="https://github.com/techuueda-bot/rofika-portfolio-site" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-          <figure>
-            <img
-              src="./assets/projects/rofika/rofika-01-hero.png"
-              alt="RO FIKAのHero画面"
-              width="1410"
-              height="920"
-            />
-            <figcaption>Hero / RO FIKA</figcaption>
-          </figure>
-        </div>
-
-        <div class="project-content">
-          <section class="project-block project-block--media" aria-labelledby="rofika-overview-title">
-            <div>
-              <p class="section-label">Overview</p>
-              <h3 id="rofika-overview-title">ひとりで静かに過ごせる、夏のカフェ時間。</h3>
-              <p>
-                ターゲットは、ひとりで静かにカフェ時間を過ごしたい人。短い日本語コピー、淡い夏の色味、窓辺の光を活かしたビジュアルで、気取りすぎず入りやすい空気を目指しました。
-              </p>
-            </div>
-            <figure>
-              <img
-                src="./assets/projects/rofika/rofika-02-concept-window.png"
-                alt="RO FIKAのConceptと窓辺ビジュアル"
-                width="1410"
-                height="920"
-              />
-              <figcaption>Concept / Window Light</figcaption>
-            </figure>
-          </section>
-
-          <section class="project-block project-block--media" aria-labelledby="rofika-menu-title">
-            <div>
-              <p class="section-label">Menu / Info</p>
-              <h3 id="rofika-menu-title">雰囲気だけで終わらせない、カフェとしての安心感。</h3>
-              <p>
-                最初は世界観を重視していましたが、マーケティング視点からMenuに価格帯を追加し、Footer InfoにOpen / Close / Place / Seats / Payment / Instagramを整理しました。「おしゃれさ」だけでなく「行けそう」「入りやすそう」という実用性を少し足しています。
-              </p>
-            </div>
-            <div class="image-pair">
-              <figure>
-                <img
-                  src="./assets/projects/rofika/rofika-03-menu.png"
-                  alt="RO FIKAのMenuセクション"
-                  width="1410"
-                  height="920"
-                />
-                <figcaption>Menu / Price Range</figcaption>
-              </figure>
-              <figure>
-                <img
-                  src="./assets/projects/rofika/rofika-05-footer.png"
-                  alt="RO FIKAのFooter Info"
-                  width="1410"
-                  height="920"
-                />
-                <figcaption>Footer Info</figcaption>
-              </figure>
-            </div>
-          </section>
-
-          <section class="project-block project-block--media" aria-labelledby="rofika-gallery-title">
-            <div>
-              <p class="section-label">Gallery / Motion</p>
-              <h3 id="rofika-gallery-title">写真の実在感を、静かに残す。</h3>
-              <p>
-                Galleryには実写真を使い、架空サイトでもカフェとしての実在感が出るようにしました。窓まわりにはdata-driftによる控えめな動きを入れていますが、Galleryには動きを付けず、写真の空気感と表示の安定性を優先しています。
-              </p>
-            </div>
-            <figure>
-              <img
-                src="./assets/projects/rofika/rofika-04-fika-gallery.png"
-                alt="RO FIKAのFIKA TIMEとGallery"
-                width="1410"
-                height="920"
-              />
-              <figcaption>FIKA Time / Gallery</figcaption>
-            </figure>
-          </section>
-
-          <section class="project-block project-block--media" aria-labelledby="rofika-responsive-title">
-            <div>
-              <p class="section-label">Responsive</p>
-              <h3 id="rofika-responsive-title">スマホでも、余白と情報を読みやすく。</h3>
-              <p>
-                スマホ表示では、Heroの印象を保ちつつ、Galleryは2列、Footer Infoは1列で読めるように調整しました。横スクロールを出さず、短い説明とスクリーンショット中心で見せています。
-              </p>
-            </div>
-            <div class="mobile-shots">
-              <figure>
-                <img
-                  src="./assets/projects/rofika/rofika-mobile-01-hero.png"
-                  alt="RO FIKAのスマホHero画面"
-                  width="375"
-                  height="844"
-                />
-                <figcaption>Mobile Hero</figcaption>
-              </figure>
-              <figure>
-                <img
-                  src="./assets/projects/rofika/rofika-mobile-03-info.png"
-                  alt="RO FIKAのスマホFooter Info"
-                  width="375"
-                  height="844"
-                />
-                <figcaption>Mobile Info</figcaption>
-              </figure>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section id="polano" class="project-section" aria-labelledby="polano-title">
-        <div class="project-hero">
-          <div>
-            <p class="section-label">Project Detail</p>
-            <h2 id="polano-title">ポラーノワークス</h2>
-            <p>
-              架空の就労継続支援B型事業所の見学案内サイトです。「見学だけでも、大丈夫です。」を中心に、利用を急がせず、本人が自分のペースで見学について相談できる導線を設計しました。
-            </p>
-            <div class="project-links" aria-label="ポラーノワークスの外部リンク">
-              <a href="https://techuueda-bot.github.io/polano-works-tour-guide/" target="_blank" rel="noopener noreferrer">Live Site</a>
-              <a href="https://github.com/techuueda-bot/polano-works-tour-guide" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-          <figure>
-            <img
-              src="./assets/projects/polano/polano-01-first-view-pc.png"
-              alt="ポラーノワークス見学案内サイトのファーストビュー"
-              width="1440"
-              height="900"
-            />
-            <figcaption>Hero / Polano Works</figcaption>
-          </figure>
-        </div>
-
-        <div class="project-content">
-          <section class="project-block project-block--media" aria-labelledby="polano-strategy-title">
-            <div>
-              <p class="section-label">Strategy</p>
-              <h3 id="polano-strategy-title">決定へ押し込まず、不安をほどく導線。</h3>
-              <p>
-                目的を「利用開始」ではなく「見学前の不安軽減」に置きました。FAQ、見学の流れ、写真で見る道順、相談フォームへと段階的に進めることで、本人には急がせず、支援者には必要な情報を探しやすくしています。
-              </p>
-            </div>
-            <figure>
-              <img
-                src="./assets/projects/polano/polano-02-contact-form-pc.png"
-                alt="ポラーノワークス見学相談フォームのPC表示"
-                width="1440"
-                height="900"
-              />
-              <figcaption>Consultation Form / Required Fields</figcaption>
-            </figure>
-          </section>
-
-          <section class="project-block project-block--media" aria-labelledby="polano-form-title">
-            <div>
-              <p class="section-label">Form Design</p>
-              <h3 id="polano-form-title">見学確定ではなく、相談の入口として設計する。</h3>
-              <p>
-                必須項目は「お名前」と「連絡先」の2つに限定しました。自由記入欄は任意であることを明示し、電話が苦手な人にも配慮して、メール希望者には電話しない約束が見えるようにしています。
-              </p>
-            </div>
-            <div class="mobile-shots">
-              <figure>
-                <img
-                  src="./assets/projects/polano/polano-03-first-view-mobile.png"
-                  alt="ポラーノワークス見学案内サイトのスマホファーストビュー"
-                  width="390"
-                  height="844"
-                />
-                <figcaption>Mobile Hero</figcaption>
-              </figure>
-              <figure>
-                <img
-                  src="./assets/projects/polano/polano-04-contact-fields-mobile.png"
-                  alt="ポラーノワークス見学相談フォームのスマホ入力欄"
-                  width="390"
-                  height="844"
-                />
-                <figcaption>Mobile Form</figcaption>
-              </figure>
-            </div>
-          </section>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>Portfolio Minimal / 2026</p>
-    </footer>
-  </body>
+  <button class="motion-stop">アニメーションを停止する</button>
+  <script src="assets/js/works.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/stage.js" defer></script>
+</body>
 </html>
