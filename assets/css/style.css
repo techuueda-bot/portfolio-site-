@@ -566,3 +566,21 @@ html.is-motion-off .js-reveal { opacity: 1; transform: none; }
 html.is-motion-off .viewport__strip { transform: none !important; }
 html.is-motion-off .hero__field { transform: none !important; }
 html.is-motion-off .hero__plane { --plane-opacity: 0.8; filter: none; }
+
+/* ---------- Notes（私の思考） ----------
+   一覧はトップの Index（.index-row）、カテゴリは .approach、記事は Works 詳細の部品を流用。
+   ここには Notes にしかない差分だけを置く。 */
+.note-cat { display: block; text-decoration: none; }
+.note-cat:hover { opacity: 1; border-top-color: var(--shell-ink); }
+.note-cat__count { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; color: var(--shell-muted); margin-top: calc(var(--space) * 2); }
+.index-list--notes .index-row a { grid-template-columns: 7em 1fr auto; }
+@media (max-width: 767px) {
+  .index-list--notes .index-row a { grid-template-columns: 1fr; }
+  .index-list--notes .index-row__kind { grid-column: 1; }
+}
+.note-conclusion { margin-top: calc(var(--section-pad) * 0.6); border-left: 2px solid var(--stage-accent); padding-left: calc(var(--space) * 3); }
+.note-conclusion__text { font-family: var(--font-display); font-weight: 700; font-size: clamp(19px, 2.4vw, 24px); line-height: 1.7; margin-top: var(--space); }
+.note-points { padding-left: 1.2em; opacity: 0.8; }
+.note-points li + li { margin-top: calc(var(--space) * 1.5); }
+.detail-block p + p { margin-top: 1.4em; }
+.note-source__by { font-size: 13px; color: var(--shell-muted); }
