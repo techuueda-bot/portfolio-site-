@@ -7,7 +7,7 @@ multipage-guide.md の「1箇所直したら全ページに反映」を、手作
 """
 import pathlib
 
-SITE = pathlib.Path("/Users/uedatetsuhisa/Documents/Codex/portfolio-site")
+SITE = pathlib.Path(__file__).resolve().parent.parent
 BASE = "https://techuueda-bot.github.io/portfolio-site-"
 NAME = "Tetsuhisa Ueda"
 
@@ -163,6 +163,7 @@ def header(rel, current):
       <ul>
         <li><a href="{rel}"{mark('top')}>Top</a></li>
         <li><a href="{rel}works/"{mark('works')}>Works</a></li>
+        <li><a href="{rel}notes/"{mark('notes')}>Notes</a></li>
         <li><a href="{rel}about/"{mark('about')}>About</a></li>
         <li><a href="{rel}contact/"{mark('contact')}>Contact</a></li>
       </ul>
@@ -178,6 +179,7 @@ def footer(rel):
       <p><small>&copy; 2026 {NAME}</small></p>
       <ul class="site-footer__nav">
         <li><a href="{rel}works/">Works</a></li>
+        <li><a href="{rel}notes/">Notes</a></li>
         <li><a href="{rel}about/">About</a></li>
         <li><a href="{rel}contact/">Contact</a></li>
         <li><a href="{rel}privacy/">Privacy</a></li>

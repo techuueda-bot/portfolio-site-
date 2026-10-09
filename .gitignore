@@ -1,3 +1,4 @@
 .DS_Store
 _source-captures/
 assets/img/works/strips.json
+__pycache__/

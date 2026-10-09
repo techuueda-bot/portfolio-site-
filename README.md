@@ -29,6 +29,7 @@ Claude Code から開くときは `.claude/launch.json` の `portfolio-site` を
 | 下層ページの本文・共通パーツ | `_tools/build_pages.py` を編集 → `python3 _tools/build_pages.py` で再生成 |
 | ヒーローで浮かぶ5枚の位置 | `index.html` の `.hero__plane` の `--x / --y / --z / --rot` |
 | 展示のスクロール量 | `assets/css/style.css` の `.exhibit { height: 300svh }` |
+| Notes（私の思考）の記事・カテゴリ | `_tools/notes_data.py` を編集 → `python3 _tools/build_notes.py` で再生成 |
 
 **下層ページのHTMLを直接編集してもよいが、ヘッダー・フッター・メタなどの共通部分を
 変えるときは必ず `_tools/build_pages.py` を直して再生成すること。**
@@ -46,6 +47,22 @@ Claude Code から開くときは `.claude/launch.json` の `portfolio-site` を
 4. `_tools/build_pages.py` の `WORKS` に1件追加 → 実行（一覧と詳細ページができる）
 5. `python3 <skill>/scripts/generate_sitemap.py . https://techuueda-bot.github.io/portfolio-site-` で sitemap 更新
 6. QAを通す（下記4）
+
+---
+
+## 3.5 Notes（私の思考）に記事を足す
+
+`notes/` は、YouTubeからの学び・創作の考え・論文の知見・経営と金融を置く読み物のセクション。
+作品の展示とは別に、共通パーツ（`build_pages.py` の head/header/footer）だけを借りて生成している。
+
+1. `_tools/notes_data.py` の `NOTES` に1件追加（雛形は `draft: True` の `template`）
+   - 型は **結論 → 要点 → 私の考え → 次に試すこと → 出典**
+   - **出典（sources）は必須**。空だと生成時にエラーで止まる。動画は時刻、論文は節やページを `where` に書く
+2. `python3 _tools/build_notes.py` → `notes/<カテゴリ>/<slug>/` ができ、一覧と新着に載る
+3. 下書きを見たいときは `--drafts` を付ける（noindexで生成される。**コミットしない**）
+4. 記事を足したら sitemap に記事URLを追加する
+
+カテゴリを増やすときは `CATEGORIES` に1件足すだけでよい（一覧・カテゴリページは自動で増える）。
 
 ---
 
